@@ -1,0 +1,15 @@
+{
+  "name": "uploading_product_cards_from_ozon_with_photos",
+  "version": "1.0.0",
+  "description": "Ozon product cards sync to PostgreSQL",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "init-db": "node src/database.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3"
+  }
+}
