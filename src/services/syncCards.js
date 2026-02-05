@@ -49,7 +49,6 @@ function extractImages(pictureData, attrItem) {
 function extractVideoUrls(complexAttributes) {
   if (!complexAttributes?.length) return null;
 
-  // Ищем URL видео в complex_attributes (id 21841, 21845 и подобные содержат mp4 ссылки)
   const videoUrls = [];
   for (const attr of complexAttributes) {
     for (const val of (attr.values || [])) {
